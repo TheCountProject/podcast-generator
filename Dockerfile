@@ -1,13 +1,11 @@
 FROM ubuntu:latest
 
-RUN add-apt-repository ppa:deadsnakes/ppa
-
 RUN apt-get update && apt-get install -y \
    python3.11 \ 
    python3-pip \
    git
 
-RUN pip3 install pyYAML
+RUN pip3 install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 
