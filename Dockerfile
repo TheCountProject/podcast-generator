@@ -1,9 +1,9 @@
-FROM ubuntu:24.04.3
+FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
-   python3.11 \ 
-   python3-pip \
-   git
+    python3.12 \ 
+    python3-pip \
+    git
 
 RUN pip3 install PyYAML
 
